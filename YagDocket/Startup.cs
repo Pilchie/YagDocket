@@ -19,7 +19,7 @@ namespace YagDocket
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddServerSideBlazor();
+            services.AddServerSideBlazor().AddSignalR().AddAzureSignalR();
             services.AddSingleton<WeatherForecastService>();
         }
 
